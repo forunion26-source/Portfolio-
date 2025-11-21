@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Card — Starwarer_YT</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f0f0f0;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      width: 300px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-header {
+      background: #0073b1;
+      height: 100px;
+    }
+
+    .profile-pic {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      position: relative;
+      top: -40px;
+      left: calc(50% - 40px);
+      background-image: url('https://via.placeholder.com/80'); /* placeholder, replace with real image */
+      background-size: cover;
+    }
+
+    .card-body {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-body h2 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .card-body p.subtitle {
+      margin: 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .card-body p.bio {
+      margin: 15px 0;
+      color: #555;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .card-footer {
+      padding: 15px;
+      background: #f9f9f9;
+      text-align: center;
+    }
+
+    .card-footer a {
+      text-decoration: none;
+      color: #0073b1;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .card-footer a:hover {
+      color: #005582;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-header"></div>
+    <div class="profile-pic"></div>
+    <div class="card-body">
+      <h2>Starwarer_YT</h2>
+      <p class="subtitle">LinkedIn User (“undefined”)</p>
+      <p class="bio">
+        Hi! I’m a content creator and tech enthusiast. I love working on projects, sharing ideas, and building meaningful connections. You can check out my LinkedIn profile below.
+      </p>
+    </div>
+    <div class="card-footer">
+      <a href="https://in.linkedin.com/in/starwarer-yt-undefined-b33613392" target="_blank">View LinkedIn Profile</a>
+    </div>
+  </div>
+
+</body>
+</html>
